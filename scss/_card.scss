@@ -1,15 +1,21 @@
 .card {
   background: linear-gradient(-270deg, $blue-300, $blue-500);
   width: 80%;
-
+  overflow: hidden;
   color: $white;
   border-radius: 0.85rem;
   padding: 2.2rem 1rem;
+  z-index: -2;
+
+  .profile-container {
+    position: relative;
+  }
 
   .profile {
     margin: 0 auto;
+    overflow: hidden;
     img {
-      border: 3px solid $red-300;
+      border: 2px solid $red-300;
       max-width: 85%;
     }
     @media (max-width: 991.98px) {
@@ -22,5 +28,34 @@
 
   .bio {
     color: $white;
+  }
+
+  .dot {
+    border-radius: 50%;
+    display: inline-block;
+    border: 2px solid $red-100;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.3;
+    transition: all 1s ease;
+  }
+
+  .dot-one {
+    @include dot_size(250);
+  }
+  .dot-two {
+    @include dot_size(275);
+  }
+  .dot-three {
+    @include dot_size(325);
+  }
+  .dot-four {
+    @include dot_size(400);
+  }
+  .dot-five {
+    @include dot_size(600);
   }
 }

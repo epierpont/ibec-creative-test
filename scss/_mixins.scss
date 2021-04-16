@@ -1,0 +1,6 @@
+@mixin dot_size($size) {
+  height: $size + px;
+  width: $size + px;
+  right: -($size/2) + px;
+  left: -($size/2) + px;
+}
