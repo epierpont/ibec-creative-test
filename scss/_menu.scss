@@ -1,0 +1,8 @@
+.menu-arrow {
+  margin: 0 auto;
+  //transform: rotate(180deg);
+
+  &:hover {
+    cursor: pointer;
+  }
+}
