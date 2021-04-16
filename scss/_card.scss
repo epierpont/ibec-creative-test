@@ -1,0 +1,12 @@
+.card {
+  background-color: $blue;
+  color: $white;
+  border-radius: 0.85rem;
+
+  .profile {
+    img {
+      border: 3px solid $light-red;
+      max-width: 75%;
+    }
+  }
+}
