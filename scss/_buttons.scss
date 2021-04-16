@@ -1,0 +1,19 @@
+.btn {
+  border: 1px solid $gray;
+  background-color: transparent;
+  transition: background-color 0.15s ease-in-out;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+
+  a {
+    text-decoration: none;
+    color: $white;
+    font-size: 0.875rem;
+  }
+
+  &:hover {
+    border-color: $red-100;
+    background-color: $red-500;
+  }
+}

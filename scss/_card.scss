@@ -1,12 +1,18 @@
 .card {
-  background-color: $blue;
+  background: linear-gradient(-270deg, $blue-300, $blue-500);
+
   color: $white;
   border-radius: 0.85rem;
+  padding: 2.2rem 1rem;
 
   .profile {
     img {
-      border: 3px solid $light-red;
-      max-width: 75%;
+      border: 3px solid $red-300;
+      max-width: 85%;
     }
+  }
+
+  .bio {
+    color: $white;
   }
 }
