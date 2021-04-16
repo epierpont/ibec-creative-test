@@ -1,14 +1,22 @@
 .card {
   background: linear-gradient(-270deg, $blue-300, $blue-500);
+  width: 80%;
 
   color: $white;
   border-radius: 0.85rem;
   padding: 2.2rem 1rem;
 
   .profile {
+    margin: 0 auto;
     img {
       border: 3px solid $red-300;
       max-width: 85%;
+    }
+    @media (max-width: 991.98px) {
+      max-width: 45%;
+    }
+    @media (max-width: 767.98px) {
+      max-width: 60%;
     }
   }
 
